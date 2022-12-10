@@ -8,21 +8,26 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 import ContactCards from './ContactCards';
 
 
-function Contact() {
+function Contact(props) {
   const ContactArray = 
   [
    {name:'Pratiksha', msg:'Hola', time:'12:00am', img:'https://pps.whatsapp.net/v/t61.24694-24/315423624_665478868573085_6189060788976923487_n.jpg?ccb=11-4&oh=01_AdSHlEqWi1zWXqrfvStVXPbpkZaMmxSNxIYpGazhBuaCDQ&oe=639C3691'},
    {name:'Priyanka', msg:'Bro😂😂😂', time:'11:45pm', img:'https://pps.whatsapp.net/v/t61.24694-24/211388931_209197104804422_6108169581373096715_n.jpg?ccb=11-4&oh=01_AdReOBZ3BCpbkA1PpwoBMl4glO0XsFhfvrnazNdrSzIBcQ&oe=639C2E14'},
    {name:'Eijaz', msg:'Ok thank you', time:'9:19pm', img:'https://pps.whatsapp.net/v/t61.24694-24/298328542_766611371246745_4042993338047187675_n.jpg?ccb=11-4&oh=01_AdQ5Apb34ZHCGizP7OLyfDukaNV5LevUH6lLTLs4VsDVsw&oe=639C32FD'},
-   {name:'Arfat', msg:'Keyboard', time:'yesterday', img:'https://pps.whatsapp.net/v/t61.24694-24/312280018_169906322326594_541453286877171405_n.jpg?ccb=11-4&oh=01_AdRlC6BpZPKwLL7acplLyVf-K5eJJB6iRZ7zaqbQm7A8Jw&oe=639C1AB0'},
+   {name:'Arfat', msg:'Keyboard ☹️', time:'yesterday', img:'https://pps.whatsapp.net/v/t61.24694-24/312280018_169906322326594_541453286877171405_n.jpg?ccb=11-4&oh=01_AdRlC6BpZPKwLL7acplLyVf-K5eJJB6iRZ7zaqbQm7A8Jw&oe=639C1AB0'},
    {name:'Sumera', msg:'I dont know', time:'Friday', img:'https://pps.whatsapp.net/v/t61.24694-24/306804064_732639864945686_2565074498871208811_n.jpg?ccb=11-4&oh=01_AdQbVgw0ixonyF1LGw8LL2VdUgAfuLMrZYVqWsnZQDd4Pw&oe=639C1B5F'},
    {name:'Arbaz', msg:'Got it', time:'Thursday', img:'https://pps.whatsapp.net/v/t61.24694-24/312270294_1198660327725915_6552461764297499301_n.jpg?ccb=11-4&oh=01_AdTP9YNGjKmypL_jwP7upfkT9fF2guJ_7kV7aKTTsTqF7A&oe=639C0C1A'},
    {name:'Nikhat', msg:'Hey', time:'01/12/2022', img:'https://pps.whatsapp.net/v/t61.24694-24/180331887_856279525298753_2313013107755184080_n.jpg?ccb=11-4&oh=01_AdQUR7sEjchXrLHGksMctKxUa0TO1SHs27O9iINnwNwHEQ&oe=639C2736'},
-   {name:'Misba', msg:'Bye', time:'02/12/2022', img:'https://pps.whatsapp.net/v/t61.24694-24/311558500_110009375161931_1795086125665368810_n.jpg?ccb=11-4&oh=01_AdTYBaIJYvf8uDU3ppRYPNKxM0euF29UWR2tnVaMkDUbKw&oe=639C2363'},
+   {name:'Misba', msg:'Bye', time:'02/12/2022', img:'https://pps.whatsapp.net/v/t61.24694-24/311819154_518375196901307_1939959164750011284_n.jpg?ccb=11-4&oh=01_AdRJim9Kmknl5nQ3OKN1el6XaNhiuDm55NX-Tp8uQH_6UQ&oe=63A19824'},
    {name:'Farha', msg:'Come again', time:'01/12/2019', img:'https://pps.whatsapp.net/v/t61.24694-24/307103608_5188485381263683_671062888608676686_n.jpg?ccb=11-4&oh=01_AdTzevrPeKvDvIKaIcYLZx4y7hdzq4_WL7No-cGjhsQEZQ&oe=639C0E2E'},
-   {name:'Lubna', msg:'take care', time:'01/12/2018', img:'https://pps.whatsapp.net/v/t61.24694-24/106985811_556737068326838_349287456192329241_n.jpg?ccb=11-4&oh=01_AdREWF13KpHvXiJT08m4ouVD5xkxNF7eMSBRNxCTc3wDNA&oe=639C2910'}
-  
+   {name:'Lubna', msg:'take care', time:'01/12/2018', img:'https://pps.whatsapp.net/v/t61.24694-24/106985811_556737068326838_349287456192329241_n.jpg?ccb=11-4&oh=01_AdREWF13KpHvXiJT08m4ouVD5xkxNF7eMSBRNxCTc3wDNA&oe=639C2910'},
+   {name:'Pratiksha', msg:'Hola', time:'12:00am', img:'https://pps.whatsapp.net/v/t61.24694-24/315423624_665478868573085_6189060788976923487_n.jpg?ccb=11-4&oh=01_AdSHlEqWi1zWXqrfvStVXPbpkZaMmxSNxIYpGazhBuaCDQ&oe=639C3691'},
+   {name:'Priyanka', msg:'Bro😂😂😂', time:'11:45pm', img:'https://pps.whatsapp.net/v/t61.24694-24/211388931_209197104804422_6108169581373096715_n.jpg?ccb=11-4&oh=01_AdReOBZ3BCpbkA1PpwoBMl4glO0XsFhfvrnazNdrSzIBcQ&oe=639C2E14'},
   ]
+
+  function XYZ(x){
+    props.setContact(x)
+  }
 
 
 
@@ -45,23 +50,24 @@ function Contact() {
       <div className=' text-gray-300 text-lg space-x-2 items-center flex mx-2 '>
       <div className='flex bg-gray-600 space-x-2 px-4 rounded-md w-full py-2  items-center h-8 my-2'>
       <SearchIcon fontSize='inherit'/>
-      <input placeholder='Search or start a new chat' className='w-full bg-transparent text-xs  '></input>
+      <input placeholder='Search or start a new chat' className='w-full bg-transparent text-xs'></input>
       </div>
       <FilterListIcon fontSize='inherit'/>
       </div>
 
 
       {/* Contacts icons and messages */}
-      <div className='overflow-y-scroll max-h-[32rem]'>
+      <div className='overflow-y-scroll max-h-screen pb-28'>
       
       {
-        ContactArray.map((item,index) => <ContactCards key={index} 
-        setImg={item.img}
+        ContactArray.map((item,index) => <button onClick={()=>XYZ(item)} key={index} className='w-full'>
+        <ContactCards setName={item.name} setImg={item.img} setMsg={item.msg} setTime={item.time}/></button> )}
+        {/* setImg={item.img}
         setName={item.name}
         setMsg={item.msg}
-        setTime={item.time}
-        />)
-      }
+        setTime={item.time} */}
+      
+      
 
       {/* <ContactCards setName='Sumera' setMsg='Mujhe nai pata 😶' setTime='11:45pm' setImg='https://pps.whatsapp.net/v/t61.24694-24/306804064_732639864945686_2565074498871208811_n.jpg?ccb=11-4&oh=01_AdQhVBeFt5n5w9xCMq6cNYeHDSv6M3guKnhNbyfL4g15vg&oe=639AC9DF'/>
       <ContactCards setName='Arfat' setMsg='Keyboard ⌨️' setTime='8:00pm' setImg='https://pps.whatsapp.net/v/t61.24694-24/312280018_169906322326594_541453286877171405_n.jpg?ccb=11-4&oh=01_AdRGXvW2lKFMUaYn9yGVqzlu1iXudG9mZa57pUWTVtMlSw&oe=639AC930'/>

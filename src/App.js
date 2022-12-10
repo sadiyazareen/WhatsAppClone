@@ -1,9 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
 // import About from './Day';
 // import Project from './Day';
 // import Img1 from './Img';
 import Homescreen from './Screens/Homescreen';
+import ClassScreen from './Screens/ClassScreen';
 
 
 function App() {
@@ -15,8 +14,9 @@ function App() {
       <Project/> */}
 
       <Homescreen/>
+      {/* <ClassScreen/> */}
+  
 
-      
       
     </div>
   );
